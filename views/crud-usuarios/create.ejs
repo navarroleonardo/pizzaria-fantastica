@@ -1,13 +1,12 @@
-<%- include('../parts/head',{title:'Pizzaria Fantástica - Editando Pizza'}); %>
+<%- include('../parts/head',{title:'Pizzaria Fantástica - Adicionar Usuário'}); %>
 <link rel="stylesheet" href="/css/form-usuario.css">
-<form id="form-usuario" method="POST" action="/users" enctype="multipart/form-data">
+<form id="form-usuario" method="POST" action="/users">
 	<label>
 		Foto:
-		<img src="/img/no-image.png">
-		<div>Clique para selecione nova imagem</div>
-		<input type="file" name="img" id="img">
+		<img src="/img/user-default.png">
+		<div>Troque a imagem padrão editando o perfil</div>
 	</label>
-	
+
 	<div class="campos">
 		<label>
 			Nome:
@@ -26,14 +25,14 @@
 	
 		<label>
 			Confirme a Senha:
-			<input type="password" name="conf" id="conf" placeholder="Confirme a senha do usuário">
+			<input type="password" name="conf" id="conf" placeholder="Confirme a senha">
 		</label>
 
+		<% if (err) { %>
+			<p><%= err %></p>
+		<% } %>
+		
 		<button type="submit">Salvar</button>
 	</div>
-
-	
-
-	
 </form>
 <%- include('../parts/foot'); %>

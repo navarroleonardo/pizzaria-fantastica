@@ -1,7 +1,7 @@
 Concluir CRUD de usuários:
     ✔ Listar usuários @done
     ✔ Criar rota get que retorne uma view com form para adição de usuário @done
-    ☐ Criar rota post para adicionar um usuário e fazer o seu respectivo controller
+    ✔ Criar rota post para adicionar um usuário e fazer o seu respectivo controller @30m @started(20-06-01 15:37) @done(20-06-01 18:55) @lasted(3h18m11s)
     ☐ Criar rota get que retorne uma view com form para edição de usuário
     ☐ Criar rota put para alterar as informações de um usuário
     ☐ Criar rota e controller para remoção de um usuário.
